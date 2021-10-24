@@ -1,0 +1,36 @@
+name: image_encription_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.3.8
+  flutter_login: ^2.2.1
+  flutter:
+    sdk: flutter
+  amplify_flutter: ^0.2.4
+  amplify_core: ^0.2.4
+  amplify_auth_cognito: ^0.2.4
+  amplify_datastore: ^0.2.4
+  firebase_auth: ^3.1.4
+  firebase_storage: ^10.0.6
+  firebase_core: ^1.8.0
+  image_picker: ^0.8.4+3
+  image_gallery_saver: ^1.7.1
+  esys_flutter_share: ^1.0.2
+  image: ^3.0.8
+  permission_handler: ^8.2.5
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/appIcon.png

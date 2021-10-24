@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "125827034378",
+    "project_id": "steganography-app-8b4ad",
+    "storage_bucket": "steganography-app-8b4ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125827034378:android:c1d3108b9d338805c19ef3",
+        "android_client_info": {
+          "package_name": "com.example.image_encription_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125827034378-rdpntk3d57731avqsn3anoqo14o6r5a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHk1E9DSj3k8EEcAJHz39bRok7Ufgvsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125827034378-rdpntk3d57731avqsn3anoqo14o6r5a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125827034378:android:b63c23e4ceb0975cc19ef3",
+        "android_client_info": {
+          "package_name": "com.example.imagw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125827034378-rdpntk3d57731avqsn3anoqo14o6r5a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHk1E9DSj3k8EEcAJHz39bRok7Ufgvsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125827034378-rdpntk3d57731avqsn3anoqo14o6r5a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

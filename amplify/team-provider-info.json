@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-imageencriptionapp-dev-222049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::318924542454:role/amplify-imageencriptionapp-dev-222049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::318924542454:role/amplify-imageencriptionapp-dev-222049-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-imageencriptionapp-dev-222049-deployment",
+      "UnauthRoleName": "amplify-imageencriptionapp-dev-222049-unauthRole",
+      "StackName": "amplify-imageencriptionapp-dev-222049",
+      "StackId": "arn:aws:cloudformation:us-east-2:318924542454:stack/amplify-imageencriptionapp-dev-222049/224c0540-2ad9-11ec-935d-069773cbf138",
+      "AmplifyAppId": "d2yjf0vr2joi0u"
+    },
+    "categories": {
+      "auth": {
+        "imageencriptionapp0c468172": {}
+      }
+    }
+  }
+}
