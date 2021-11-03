@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/dashboard_controller.dart';
+import '../controllers/encoderesult_controller.dart';
 
-class DashboardView extends GetView<DashboardController> {
+class EncoderesultView extends GetView<EncoderesultController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome UJ Image Encription'),
+        title: Text('Hoorey! Encoded!'),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -32,59 +33,40 @@ class DashboardView extends GetView<DashboardController> {
             SizedBox(
               height: 10,
             ),
-            Container(
-              clipBehavior: Clip.hardEdge,
-              height: 70,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: Colors.blue.shade400,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Center(
-                child: Text(
-                  "MESSAGE ENCRIPTION",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
             MaterialButton(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(5),
               ),
               color: Colors.blue.shade400,
-              onPressed: () => Get.toNamed("/encription"),
+              onPressed: () {},
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.email),
+                  Icon(Icons.save),
                   SizedBox(
                     width: 10,
                   ),
-                  Text("Encode a message"),
+                  Text("Save"),
                 ],
               ),
             ),
             MaterialButton(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(5),
               ),
               color: Colors.blue.shade400,
-              onPressed: () => Get.toNamed("/decription"),
+              onPressed: () {},
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.open_in_browser),
+                  Icon(Icons.share),
                   SizedBox(
                     width: 10,
                   ),
-                  Text("Decode a message"),
+                  Text("Share"),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
