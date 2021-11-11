@@ -43,14 +43,21 @@ class EncriptionController extends GetxController {
   }
 
   Future<void> encriptMessages() async {
-    if (messageCtrl.text.isNotEmpty && encriptionKeyCtrl.text.isNotEmpty) {}
-    Get.toNamed("/encoderesult", arguments: {
-      "message": messageCtrl.text,
-      "key": encriptionKeyCtrl.text,
-      "file": file,
-    });
-
-    return;
+    if (messageCtrl.text.isNotEmpty && encriptionKeyCtrl.text.isNotEmpty) {
+      Get.toNamed("/encoderesult", arguments: {
+        "message": messageCtrl.text,
+        "key": encriptionKeyCtrl.text,
+        "file": file,
+      });
+    } else {
+      Get.snackbar("Error", "Please fill all the fields",
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+          borderRadius: 10,
+          margin: EdgeInsets.all(10),
+          snackStyle: SnackStyle.FLOATING);
+    }
   }
 
   @override
