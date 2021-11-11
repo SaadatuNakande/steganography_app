@@ -55,7 +55,7 @@ class EncriptionController extends GetxController {
           backgroundColor: Colors.red,
           colorText: Colors.white,
           borderRadius: 10,
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           snackStyle: SnackStyle.FLOATING);
     }
   }
