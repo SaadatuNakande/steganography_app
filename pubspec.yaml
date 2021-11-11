@@ -23,6 +23,7 @@ dependencies:
   esys_flutter_share: ^1.0.2
   image: ^3.0.8
   cloud_firestore: ^2.5.4
+  encrypt: ^5.0.0-beta
 
 dev_dependencies:
   flutter_lints: ^1.0.0

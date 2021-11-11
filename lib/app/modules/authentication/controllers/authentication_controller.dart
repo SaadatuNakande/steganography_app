@@ -29,7 +29,7 @@ class AuthenticationController extends GetxController {
       final user = await auth.createUserWithEmailAndPassword(
           email: data.name, password: data.password);
       final usersReference = store.collection("users").doc(user.user?.uid);
-      final result = await usersReference.set({
+      await usersReference.set({
         "uid": usersReference.id,
         "email": data.name,
         "password": data.password

@@ -11,6 +11,7 @@ abstract class Routes {
   static const DECRIPTION = _Paths.DECRIPTION;
   static const ENCODERESULT = _Paths.ENCODERESULT;
   static const DECODERESULT = _Paths.DECODERESULT;
+  static const WELCOME = _Paths.WELCOME;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const DECRIPTION = '/decription';
   static const ENCODERESULT = '/encoderesult';
   static const DECODERESULT = '/decoderesult';
+  static const WELCOME = '/welcome';
 }

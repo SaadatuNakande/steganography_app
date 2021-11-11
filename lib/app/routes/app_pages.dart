@@ -14,6 +14,8 @@ import 'package:image_encription_app/app/modules/encription/bindings/encription_
 import 'package:image_encription_app/app/modules/encription/views/encription_view.dart';
 import 'package:image_encription_app/app/modules/home/bindings/home_binding.dart';
 import 'package:image_encription_app/app/modules/home/views/home_view.dart';
+import 'package:image_encription_app/app/modules/welcome/bindings/welcome_binding.dart';
+import 'package:image_encription_app/app/modules/welcome/views/welcome_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -22,7 +24,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.AUTHENTICATION;
+  static const INITIAL = Routes.WELCOME;
 
   static final routes = [
     GetPage(
@@ -59,6 +61,11 @@ class AppPages {
       name: _Paths.DECODERESULT,
       page: () => DecoderesultView(),
       binding: DecoderesultBinding(),
+    ),
+    GetPage(
+      name: _Paths.WELCOME,
+      page: () => WelcomeView(),
+      binding: WelcomeBinding(),
     ),
   ];
 }

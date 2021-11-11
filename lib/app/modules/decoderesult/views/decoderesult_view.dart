@@ -16,24 +16,31 @@ class DecoderesultView extends GetView<DecoderesultController> {
         ),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("Decoded Message:",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                )),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              'DecoderesultView is working',
-              style: TextStyle(fontSize: 20),
-            ),
-          ],
+      body: Obx(
+        () => Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Decoded Message:",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  )),
+              SizedBox(
+                height: 10,
+              ),
+              controller.imageResult.value["message"] == null
+                  ? Text(
+                      'No Results Found',
+                      style: TextStyle(fontSize: 20),
+                    )
+                  : Text(
+                      controller.imageResult.value["message"],
+                      style: TextStyle(fontSize: 20),
+                    ),
+            ],
+          ),
         ),
       ),
     );

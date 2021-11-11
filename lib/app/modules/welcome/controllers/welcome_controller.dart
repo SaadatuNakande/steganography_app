@@ -1,11 +1,12 @@
 import 'package:get/get.dart';
 
-class DecoderesultController extends GetxController {
-  Rx<Map<String, dynamic>> imageResult = Rx<Map<String, dynamic>>({});
+class WelcomeController extends GetxController {
+  //TODO: Implement WelcomeController
+
+  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
-    imageResult(Get.arguments);
   }
 
   @override
@@ -15,4 +16,5 @@ class DecoderesultController extends GetxController {
 
   @override
   void onClose() {}
+  void increment() => count.value++;
 }
